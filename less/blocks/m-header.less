@@ -1,0 +1,103 @@
+/*----- M-HEADER -----*/
+
+/*----- m-top-header -----*/
+
+.m-top-header {
+  .container();
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px;
+  padding-bottom: 8px;
+
+  background: #ffffff;
+}
+
+/*----- m-nav -----*/
+
+.m-nav {
+  .container();
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.m-nav__list {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.m-nav__dropdown {
+  margin-right: 28px;
+}
+
+.m-nav__link {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 78%;
+  line-height: 78%;
+}
+
+/*----- m-bottom-header -----*/
+
+.m-bottom-header {
+  .container();
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  font-size: 92%;
+
+  background: #ffffff;
+}
+
+.m-bottom-header__city {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & svg {
+    margin-right: 6px;
+  }
+}
+
+.m-bottom-header__city-link {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+
+  & span {
+    margin-right: 6px;
+
+    text-transform: uppercase;
+
+    border-bottom: 1px dashed #000000;
+  }
+}
+
+.m-bottom-header__adress-tel {
+  text-decoration: underline;
+  color: @primary-color;
+}
+
+/*----- END-M-HEADER -----*/
