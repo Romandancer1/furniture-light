@@ -1,5 +1,89 @@
-/*----- footer -----*/
+/*----- FOOTER -----*/
 
 footer {
-  background-color: @footer-color;  
+  background-color: @footer-color;
+
 }
+.footer-links {
+  .container();
+}
+.footer-links__wrap {
+  padding: 0px 20px 0px 20px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+  justify-content: space-between;
+
+}
+.footer__links-item {
+  padding: 14px 0px 12px 0px;
+}
+
+.footer__links-item ul li:first-child {
+  margin-bottom: 17px;
+
+  text-transform: uppercase;
+  color: @footer-title-color;
+}
+
+.footer__links-item ul li {
+  margin-bottom: 8px;
+}
+
+.footer__links-item a {
+  color: @footer-links-color;
+}
+.footer__links-item a:hover {
+  text-decoration: underline;
+
+  color: @footer-links-color-hover;
+}
+.footer__download-appstore {
+  padding: 20px 3px 3px 10px;
+
+  background: #000;
+}
+.footer__download-appstore img {
+
+
+  width: 88px;
+  height: 25px;
+}
+
+.footer__download-appstore
+
+.footer__yandex {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__yandex a {
+  color: inherit;
+  text-decoration: underline;
+  font-style: italic;
+}
+.footer__smallbg {
+  background: url("../img/footer-bg.png") repeat-x;
+
+  height: 10px;
+}
+
+.footer__copyright {
+  background-color: @primary-color;
+}
+.footer__copyright-wrap {
+  .container();
+}
+.footer__copyright-text {
+  padding: 8px 0px 12px 30px;
+
+  font-size:93%;
+  line-height: 170%;
+
+  color: #fff;
+}
+
+
+/*----- END-FOOTER -----*/
