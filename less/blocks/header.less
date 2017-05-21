@@ -1,8 +1,14 @@
-/*----- header -----*/
+/*----- desktop-header -----*/
+
 
 .top__header {
   background: @primary-color;
   margin-bottom: 10px;
+}
+.header {
+  
+  width: 100%;
+
 }
 .header__wrap {
   .container();
@@ -14,6 +20,29 @@
 
 .header__item--topline {
   min-width: 300px;
+}
+.header__item--topline {
+
+  font-weight: bold;
+  text-transform: uppercase;
+
+  color: #fff;
+}
+.topline__triangle {
+  margin-left: 60px;
+  margin-top: 10px;
+
+	width: 0;
+	height: 0;
+	border-left:22px solid transparent;
+	border-right: 22px solid transparent;
+	border-bottom: 17px solid #fff;
+
+}
+.bottom-header {
+  padding-bottom: 18px;
+
+  border-bottom: 1px solid #d8dcde;
 }
 .bottom-header__item:first-child {
   margin-top: 8px;
@@ -366,3 +395,48 @@
     height: 11px;
     background-position: -210px -10px;
 }
+.header-scrolled {
+
+  & .topline__triangle {
+    display: none;
+  }
+  & .bottom-header {
+    padding-bottom: 0;
+  }
+  & .bottom-header__contacts--adress {
+    margin-top: 8px;
+
+    flex-direction: row;
+  }
+
+  & .bottom-header__logo {
+    display: none;
+  }
+
+  & .bottom-header__contacts {
+    display: none;
+  }
+
+  & .bottom-header__currency {
+    display: none;
+  }
+
+  & .bottom-header__search {
+    margin-top: 10px;
+    width: 100%;
+    min-width: 700px;
+  }
+
+  & .scroll-show {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+  }
+}
+.scroll-show {
+  display: none;
+}
+
+
+
+/*----- end - desktop-header -----*/
