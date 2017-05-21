@@ -8,6 +8,7 @@
 
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/normalize.css">
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
 
 
   </head>
@@ -15,78 +16,115 @@
   <body>
     <header>
 
-     <div class="header-wrap">
-       <div class="header__topline"></div>
-       <div class="header__logo"></div>
-     </div>
+       <div class="top__header">
 
+          <div class="header__wrap">
 
-     <div class="header-wrap">
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__list-item">
-            <a href="#">Полезные расчеты</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#">Советы мастеру</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#">Каталоги для сапр</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#">Условия доставки</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#">Доставка</a>
-          </li>
-          <li class="nav__list-item">
-            <a href="#">Контакты</a>
-          </li>
-          <button class="nav__login">Вход</button>
-          <button class="register">Регистрация</button>
-        </ul>
-      </nav>
+           <div class="header__item">
+             <div class="header__item--topline"></div>
+           </div>
+
+           <div class="header__item">
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="nav__list-item">
+                    <a href="#">Полезные расчеты</a>
+                  </li>
+                  <li class="nav__list-item">
+                    <a href="#">Советы мастеру</a>
+                  </li>
+                  <li class="nav__list-item">
+                    <a href="#">Каталоги для сапр</a>
+                  </li>
+                  <li class="nav__list-item">
+                    <a href="#">Условия доставки</a>
+                  </li>
+                  <li class="nav__list-item">
+                    <a href="#">Доставка</a>
+                  </li>
+                  <li class="nav__list-item">
+                    <a href="#">Контакты</a>
+                  </li>
+                  <a class="nav__login"> Вход</a>
+                  <a class="nav__register">Регистрация</a>
+
+                </ul>
+              </nav>
+          </div>
+        </div>
+      </div>
 
       <div class="bottom-header">
 
-        <div class="bottom-header__wrap">
-          <div class="bottom-header__contacts">
-            <div class="bottom-header__contacts--adress">
-              <a href="#" class="bottom-header__contacts--adress--city">Москва</a>
-              <a href="" class="bottom-header__contacts--adress--all">адреса</a>
-            </div>
-            <div class="bottom-header__contacts--tel">
-              <h3>8(495)788-80-07</h3>
-              <p>(юридические лица, ИП)</p>
-            </div>
-            <div class="bottom-header__contacts--tel">
-              <h3>8(495)788-80-07</h3>
-              <p>(физические лица)</p>
-            </div>
-            <div class="bottom-header__contacts--tel">
-              <h3>8(800)555-80-50</h3>
-              <p>(звонок по России бесплатный)</p>
-            </div>
-          </div>
-          <div class="bottom-header__search">
-          </div>
-        </div>
-        <div class="bottom-header__wrap">
-          <div class="bottom-header__control-buttons">
-            <div class="bottom-header__control--like">
-            </div>
-            <div class="bottom-header__control--scales">
+        <div class="header__wrap">
 
+          <div class="bottom-header__item">
+            <a href="#" class="bottom-header__logo" >
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="176" height="82" viewBox="0 0 176 82">
+                <image xlink:href="data:img/png;base64,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" width="176" height="82"/>
+              </svg>
+
+            </a>
+          </div>
+
+          <div class="bottom-header__item">
+            <div class="bottom-header__contacts">
+              <div class="bottom-header__contacts--adress">
+                <div class="bottom-header__contacts--adress--city">
+
+                    <svg id="city-loc" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="18" viewBox="0 0 13 18">
+                      <image id="city-loc" data-name="Vector Smart Object copy 4" fill="red" ; width="13" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAASCAMAAAC3taQAAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAANlBMVEX///8AUpwAUpwAUpwAUpwAUpwAUpwAUpwAUpwAUpwAUpwAUpwAUpwAUpwAUpwAUpwAUpwAAAAlbfINAAAAEHRSTlMAEEAgML9gr5+Az++P31Bwd/GhVAAAAAFiS0dEEeK1PboAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfhBRQRJSTPQ9BOAAAAiElEQVQI10WPWxbEIAhDA4KC1JH9r3awncf9EYjkBKAg5oYPolko302/CxnZj5JGrurUs4ZDMePyNakq5KuHlNHakoSkYWfdFfU15RqnM6UUrM3HTbL3AK4Fy6lp0NpopbA7g/PksfVEmrcZhZ9nxxN1lxfaMyt0Eub8HkFhFr+TIBGMP+2jvAFZVAQ83RWQnQAAAABJRU5ErkJggg=="/>
+                      <style>
+                        #city-loc {
+                           fill:#ffffff;
+                        }
+                      </style>
+                    </svg>
+
+                    <a href="#" >Москва</a>
+                    <div class="dropdown-triangle"></div>
+                </div>
+
+                <a href="" class="bottom-header__contacts--adress--all">адреса</a>
+              </div>
+              <div class="bottom-header__contacts--tel">
+                <h3>8(495)788-80-07</h3>
+                <p>(юридические лица, ИП)</p>
+              </div>
+              <div class="bottom-header__contacts--tel">
+                <h3>8(495)788-80-07</h3>
+                <p>(физические лица)</p>
+              </div>
+              <div class="bottom-header__contacts--tel">
+                <h3>8(800)555-80-50</h3>
+                <p>(звонок по России бесплатный)</p>
+              </div>
             </div>
-            <div class="bottom-header__control--cart">
-               <img src="" alt="">
-               <p>Корзина пуста</p>
+            <div class="bottom-header__search">
+              <form action="" class="search">
+                <input type="search" name="" placeholder="Поиск среди более 5000 товаров" class="search__input">
+                <button type="submit" name="" value="" class="search__submit"></button>
+              </form>
             </div>
           </div>
-          <div class="bottom-header__currency">
-            <p>Курс на сегодня: 1 у.е.=70.02 руб.</p>
+
+
+          <div class="bottom-header__item">
+            <div class="bottom-header__control-buttons">
+              <a href="" class="bottom-header__control--like">
+                 350
+              </a>
+              <a href="" class="bottom-header__control--scales">
+                 0
+              </a>
+              <a href="" class="bottom-header__control--cart">
+                корзина пуста
+              </a>
+            </div>
+            <div class="bottom-header__currency">
+              <p>Курс на сегодня: 1 у.е. = 70.02 руб.</p>
+            </div>
           </div>
-        </div>
       </div>
      </div>
 
@@ -464,9 +502,13 @@
 
       <div class="content__subscribe">
         <div class="content__subscribe-wrap">
-          <h3 class="content__subscribe-title"></h3>
-          <p class="content__subscribe-text"></p>
-          <input type="email">
+          <h3 class="content__subscribe-title">Подпишитесь на новости</h3>
+          <p class="content__subscribe-text">И вы всегда будете в курсе последних событий, новинок и акций!</p>
+          <form action="">
+            <input type="email" class="subscribe-email" placeholder="Ваш адрес электронной почты">
+          </form>
+          <button type="submit" class="button button--blue button--subscribe">Подписаться</button>
+
         </div>
       </div>
 
@@ -531,17 +573,17 @@
             </div>
 
             <div class="footer__social">
-              <p>Мы в соцсетях</p>
+              <p>Мы в соцсетях:</p>
               <div class="footer__social-wrap">
-                <a href="#" class="footer__social-fb"></a>
-                <a href="#" class="footer__social-vk"></a>
-                <a href="#" class="footer__social-youtube"></a>
+                <a href="#" class="footer__social-sprite footer__social-fb"></a>
+                <a href="#" class="footer__social-sprite footer__social-vk"></a>
+                <a href="#" class="footer__social-sprite footer__social-youtube"></a>
               </div>
             </div>
 
             <div class="footer__yandex">
-              <p>Информер для Yandex</p>
-              <a href="#">Подробнее</a>
+              <p>Информер для Yandex:</p>
+              <a href="#">подробнее</a>
             </div>
           </div>
 

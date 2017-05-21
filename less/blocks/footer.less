@@ -39,10 +39,30 @@ footer {
 
   color: @footer-links-color-hover;
 }
+.footer__download {
+  margin-bottom: 20px;
+}
 .footer__download-appstore {
-  padding: 20px 3px 3px 10px;
+  padding: 15px 3px 0px 10px;
+  margin-right: 20px;
 
   background: #000;
+  border: 1px solid #000;
+}
+.footer__download-appstore:hover {
+  border: 1px solid transparent;
+
+  -moz-border-image: -moz-linear-gradient(top, #cb6902 0%, #f6c35e 100%);
+  -webkit-border-image: -webkit-linear-gradient(top, #cb6902 0%, #f6c35e 100%);
+  border-image: linear-gradient(to top, #cb6902 0%, #f6c35e 100%);
+
+  border-image-slice: 1;
+}
+.footer__download-appstore:active {
+  /*border: 1px solid transparent;*/
+
+  background: linear-gradient(to top, #cb6902 0%, #f6c35e 100%);
+
 }
 .footer__download-appstore img {
 
@@ -50,17 +70,88 @@ footer {
   width: 88px;
   height: 25px;
 }
+.footer__download-googleplay {
+  padding: 15px 10px 0px 7px;
 
-.footer__download-appstore
+  background: #fff;
+  border: 1px solid #fff;
+}
+.footer__download-googleplay:hover {
+  border: 1px solid #000;
+}
+.footer__download-googleplay img {
+  width: 88px;
+  height: 25px;
+}
 
-.footer__yandex {
+.footer__social {
+  margin-bottom: 15px;
+
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.footer__social p {
+  text-transform: uppercase;
+  color: @footer-title-color;
+}
+
+.footer__social-wrap {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.footer__social-sprite {
+    margin-right: 13px;
+
+    background-image: url("../img/footer-sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+.footer__social-sprite:last-child {
+   margin-right: 0;
+}
+
+.footer__social-youtube {
+    width: 27px;
+    height: 28px;
+    background-position: -10px -10px;
+}
+
+.footer__social-vk {
+    width: 28px;
+    height: 28px;
+    background-position: -57px -10px;
+}
+
+.footer__social-fb {
+    width: 27px;
+    height: 28px;
+    background-position: -105px -10px;
+}
+
+
+
+
+
+.footer__yandex {
+
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+
+  /*text-transform: uppercase;*/
+}
+.footer__yandex p {
+  text-transform: uppercase;
+  color: @footer-title-color;
 }
 .footer__yandex a {
-  color: inherit;
+  color: @footer-links-color;
   text-decoration: underline;
   font-style: italic;
 }
