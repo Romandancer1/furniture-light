@@ -74,37 +74,43 @@
   text-transform: uppercase;
   font-weight: bold;
 
-  transform-style: preserve-3d;
-  transition: all 0.3s linear;
-
   &:hover {
     padding: 14px 0;
 
-
-
-
-
-
     &>.catalog__special-sections-name--new {
       background-color: @new-color;
+
+      transform-style: preserve-3d;
+      transition: all 0.2s linear;
+      transform: rotateX(360deg);
+
+      /*transform-origin: 100% 0px;*/
 
     }
 
     &>.catalog__special-sections-name--sale {
       background-color: @sale-color;
 
+      transform-style: preserve-3d;
+      transition: all 0.2s linear;
+      transform: rotateX(360deg);
 
     }
 
     &>.catalog__special-sections-name--hit {
       background-color: @hit-color;
 
-
+      transform-style: preserve-3d;
+      transition: all 0.2s linear;
+      transform: rotateX(360deg);
     }
 
     &>.catalog__special-sections-name--stock {
       background-color: @stock-color;
 
+      transform-style: preserve-3d;
+      transition: all 0.2s linear;
+      transform: rotateX(-360deg);
     }
 
     &>.catalog__special-sections-mark {
@@ -122,9 +128,8 @@
       line-height: 24px;
       color: #ffffff;
 
-      transform: rotateX(180deg);
+      //
 
-      transform-origin: 100% 0px;
     }
   }
 }
