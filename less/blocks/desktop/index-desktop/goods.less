@@ -1,15 +1,16 @@
 /* ---- GOODS INDEX ---- -*/
+
 .goods__title {
   margin-bottom: 10px;
 
   font-size: 142.8%;
 }
 .goods--slider {
+  position: relative;
 
   margin-bottom: 55px;
 
   border-top: 1px solid #d8dcde;
-  background: #fff;
 }
 .goods__item-icons {
   display: none;
@@ -23,8 +24,8 @@
   max-width: 30px;
 
   font-family: 'PT Sans Narrow', sans-serif;
-  font-size:128.5%;
-  font-weight:700;
+  font-size: 128.5%;
+  font-weight :700;
 
   text-transform: uppercase;
   color:#fff;
@@ -39,24 +40,46 @@
   background: @sale-color;
 }
 .goods__item {
-  max-width: 208px;
-  height: 100%;
 
-  padding: 27px 22px 15px 22px;
 
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  background-color: #fff;
+
+  & img {
+    margin-bottom: 12px;
+  }
+
+
+  &:hover {
+
+    border-bottom-color: @footer-color;
+    border-left-color: @footer-color;
+    border-right-color: @footer-color;
+    background-color: #edf0f2;
+
+    & .goods__item-hover {
+      display: block;
+    }
+  }
 }
+
+
+.goods__item-icons {
+  display: none;
+}
+
 .goods__item-wrap {
+  position: relative;
+
 
   min-height: 296px;
-  width: 100%;
-
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-
-  position: relative;
+  margin: 27px 24px 15px 24px;
 }
 .goods__item-text--wrap {
 
@@ -73,12 +96,29 @@
 }
 .goods__item-price {
 
+  position: absolute;
+  bottom: 0;
+
 
   font-weight: bold;
   font-size: 142.8%;
 }
 .goods__item-hover {
   display: none;
+}
+
+.goods__buy-btn {
+  width: 100%;
+  padding: 4px 0;
+  margin-bottom: 3px;
+}
+
+.goods__footer {
+  padding: 3px 14px;
+
+  font-size: 86%;
+
+  background-color: @footer-color;
 }
 
 /* ---- END GOODS INDEX ---- -*/
