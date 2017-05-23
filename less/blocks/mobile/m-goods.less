@@ -4,6 +4,7 @@
 
 .m-goods {
   .container-fluid();
+  padding: 0;
 
   background-color: @light-grey-bgc;
 }
@@ -27,6 +28,7 @@
   height: 258px;
 
   margin-right: 10px;
+  // margin-left: 10px;
 
   &:last-child {
     margin-right: 0;
@@ -105,6 +107,11 @@
 .m-product__image {
   height: 120px;
   margin-bottom: 6px;
+
+  @media (min-width:805px) {
+    height: 210px;
+  }
+
 }
 
 .m-product__description {
@@ -113,6 +120,8 @@
 
 .m-product__article {
   margin-bottom: 8px;
+
+  color: @text-color;
 }
 
 .m-product__btn {
